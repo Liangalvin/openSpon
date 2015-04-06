@@ -1,0 +1,31 @@
+<html ng-app="itemApp">
+  <head>
+    <title>Part3</title>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./js/controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/index2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="column" ng-controller="itemsController">
+      <!-- <div id="container"> -->
+        <!-- <div class="column"> -->
+
+            <ul id="itemsList">
+
+              <li ng-repeat="item in items">
+                <div class="itemcontainer">
+                  <p>By: {{item.OSS.Name}}<br>
+                  Company: {{item.OSS.Company}}</p>
+                  <img src='{{item.OSS.Image}}' class="absolute-center">
+                </div>
+              </li>
+
+            </ul>
+
+        <!-- </div> -->
+      <!-- </div> -->
+
+
+
+  </body>
+</html>
